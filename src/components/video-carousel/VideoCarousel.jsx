@@ -11,12 +11,12 @@ const VideoCarousel = () => {
   const intervalRef = useRef(null);
 
   const videos = [
-    { id: 1, title: "Bala", thumbnail: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=450&fit=crop", url: "https://vimeo.com/808734429" },
-    { id: 2, title: "Suri Products", thumbnail: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=450&fit=crop", url: "https://vimeo.com/991377492" },
-    { id: 3, title: "Fleetwell Company", thumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=450&fit=crop", url: "https://vimeo.com/980387103" },
-    { id: 4, title: "Alive Print", thumbnail: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=450&fit=crop", url: "https://vimeo.com/952502997" },
-    { id: 5, title: "Walmart", thumbnail: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=450&fit=crop", url: "https://vimeo.com/990745402 https://vimeo.com/1006823618" },
-    { id: 6, title: "Nickelytics ", thumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=450&fit=crop", url: "https://vimeo.com/1009545364" },
+    { id: 1, title: "Bala", thumbnail: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=450&fit=crop", url: "https://player.vimeo.com/video/808734429" },
+    { id: 2, title: "Suri Products", thumbnail: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=450&fit=crop", url: "https://player.vimeo.com/video/991377492" },
+    { id: 3, title: "Fleetwell Company", thumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=450&fit=crop", url: "https://player.vimeo.com/video/980387103" },
+    { id: 4, title: "Alive Print", thumbnail: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=450&fit=crop", url: "https://player.vimeo.com/video/952502997" },
+    { id: 5, title: "Walmart", thumbnail: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=450&fit=crop", url: "https://player.vimeo.com/video/990745402" },
+    { id: 6, title: "Nickelytics", thumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=450&fit=crop", url: "https://player.vimeo.com/video/1009545364" },
   ];
 
   useEffect(() => {
@@ -120,7 +120,6 @@ const VideoCarousel = () => {
               className="text-white hover:bg-white/20 absolute top-4 right-4 bg-black border border-white rounded-full"
               onClick={() => {
                 setSelectedVideo(null);
-                setIsPlaying(false);
               }}
             >
               <svg
