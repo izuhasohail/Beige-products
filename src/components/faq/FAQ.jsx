@@ -33,10 +33,10 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white mt-24">
+    <div className="min-h-screen bg-white text-white mt-24">
       {/* FAQ Section */}
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <h2 className="text-3xl sm:text-5xl font-bold text-white mb-6 hover:bg-gradient-to-r hover:from-black hover:to-red-500 hover:bg-clip-text hover:text-transparent transition-all duration-300">
+        <h2 className="text-3xl sm:text-5xl font-bold text-black mb-6 hover:bg-gradient-to-r hover:from-black hover:to-red-500 hover:bg-clip-text hover:text-transparent transition-all duration-300">
           Frequently Asked Questions
         </h2>
         
@@ -45,14 +45,14 @@ const FAQSection = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="border border-red-800/20 rounded-lg bg-black/50 backdrop-blur-sm hover:border-red-800/40 transition-all duration-300"
+              className="border border-red-800/20 rounded-lg bg-grey backdrop-blur-sm hover:border-red-800/40 transition-all duration-300"
             >
               <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
-                <span className="text-red-500 hover:text-red-400 transition-colors">
+                <span className="text-red-600 hover:text-red-400 transition-colors">
                   {faq.question}
                 </span>
               </AccordionTrigger>
-              <AccordionContent className="px-6 pb-4 text-gray-300">
+              <AccordionContent className="px-6 pb-4 text-gray-500">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

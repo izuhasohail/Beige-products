@@ -18,8 +18,9 @@ function App() {
       <Navbar />
       <HeroSection />
       <VideoCarousel />
-      <BrandCarousel />
+      {/* <BrandCarousel /> */}
       <TestimonialsCarousel />
+      <BrandCarousel />
       <EventContactForm />
       <FAQSection />
       <Footer />

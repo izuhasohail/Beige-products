@@ -57,10 +57,11 @@ const VideoCarousel = () => {
   };
 
   return (
-    <div className="w-full bg-black py-32">
+    <div className="w-full bg-white py-32">
       <div className="max-w-[90vw] mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6 hover:bg-gradient-to-r hover:from-black hover:to-red-500 hover:bg-clip-text hover:text-transparent transition-all duration-300">
+
+          <h1 className="text-4xl sm:text-6xl font-bold text-black mb-6 hover:bg-gradient-to-r hover:from-black hover:to-red-500 hover:bg-clip-text hover:text-transparent transition-all duration-300">
             Premier Corporate Event Production
           </h1>
           <p className="text-gray-400 text-lg sm:text-xl max-w-3xl mx-auto">
